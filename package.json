@@ -1,0 +1,26 @@
+{
+  "name": "js-diff-bench",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "bench:1": "hyperfine \"node ./diff_match_patch.js 1\" \"node ./fast_diff.js 1\"",
+    "bench:2": "hyperfine \"node ./diff_match_patch.js 2\" \"node ./fast_diff.js 2\"",
+    "bench:3": "hyperfine \"node ./diff_match_patch.js 3\" \"node ./fast_diff.js 3\"",
+    "bench:4": "hyperfine \"node ./diff_match_patch.js 4\" \"node ./fast_diff.js 4\"",
+    "bench:5": "hyperfine \"node ./diff_match_patch.js 5\" \"node ./fast_diff.js 5\"",
+    "bench:6": "hyperfine \"node ./diff_match_patch.js 6\" \"node ./fast_diff.js 6\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "fast-diff": "^1.3.0",
+    "diff-match-patch": "1.0.5"
+  },
+  "devDependencies": {
+    "@types/diff-match-patch": "^1.0.36"
+  }
+}
